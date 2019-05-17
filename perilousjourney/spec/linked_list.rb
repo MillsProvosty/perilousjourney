@@ -42,6 +42,35 @@ class LinkedListTest < Minitest::Test
     assert_equal "The West Family", @list.to_string
   end
 
+  def test_count_of_list
+    @list.append("Rhodes")
+    assert_equal "Rhodes", @list.append("Rhodes").surname
+  end
+
+  def test_count_of_list
+    @list.append("Rhodes")
+    @list.append("Hardy")
+    assert_equal "Hardy", @list.append("Hardy").surname
+  end
+
+  def test_count_of_list
+    @list.append("Rhodes")
+    @list.append("Hardy")
+    assert_equal 2, @list.count
+  end
+
+  def test_to_string_returns_family
+    @list.append("Rhodes")
+    @list.append("Hardy")
+    assert_equal "The Rhodes family, followed by the Hardy family", @list.to_string
+  end
+
+
+
+
+
+
+
 
 
 
