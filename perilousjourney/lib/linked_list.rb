@@ -10,5 +10,12 @@ class LinkedList
   end
 
   def count
-    binding.pry
+    if @head.next_node == nil
+      1
+    end
+  end
+
+  def to_string
+    "The #{@head.surname} Family"
+  end
 end
